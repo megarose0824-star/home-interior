@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>!Nterior - backyard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(48, 52, 54, 0.75), rgba(11, 14, 15, 0.75)), 
+                  url(images/bkd.jpeg) no-repeat center/cover;
+      color: #49a83d;
+    }
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .navbar ul li::after {
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #000000;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after {
+      width: 100%;
+    }
+    .navbar ul li a.active::after {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 60px;
+      margin-top: 80px;
+    }
+    .content p {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      padding: 0 5%;
+    }
+    .box {
+      width: 320px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      backdrop-filter: blur(4px);
+    }
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .box h3 {
+      padding: 15px 15px 5px;
+      color: #f5ac0f;
+    }
+    .box p {
+      padding: 0 15px 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">!Nterior</div>
+    <ul>
+      <li><a href="design.html">Home</a></li>
+      <li><a href="bedroom.html">Bedroom</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="kitchen.html">Kitchen</a></li>
+      <li><a href="backyard.html" class="active">backyard</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>BACKYARD DESIGNS</h1>
+    <p>Create your perfect sleep sanctuary with our backyard design ideas</p>
+    
+    <div class="gallery">
+      <div class="box">
+        <img src="images/mbk.jpeg" alt="Modern backyard">
+        <h3>Modern Minimal</h3>
+        <p>Clean lines and neutral palettes for a calm, clutter-free space.</p>
+      </div>
+      <div class="box">
+        <img src="images/llxk.jpeg" alt="Luxury backyard">
+        <h3>Luxury Comfort</h3>
+        <p>Layered textures, warm lighting and plush fabrics for elegance.</p>
+      </div>
+      <div class="box">
+        <img src="images/bhok.jpeg" alt="Boho backyard">
+        <h3>Boho Chic</h3>
+        <p>Natural materials, plants and earthy tones for a cozy vibe.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

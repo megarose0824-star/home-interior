@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+  </body>
+  </html>Nterior - Dining</title>
+  <style>
+    * {
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(107, 47, 47, 0.75), rgba(73, 52, 52, 0.75)), 
+                  url(images/ddr.jpeg) no-repeat center/cover;
+      color: #000702;
+    }
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .navbar ul li::after {
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #00d4ff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after {
+      width: 100%;
+    }
+    .navbar ul li a.active::after {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 60px;
+      margin-top: 80px;
+    }
+    .content p {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      padding: 0 5%;
+    }
+    .box {
+      width: 320px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      backdrop-filter: blur(4px);
+    }
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .box h3 {
+      padding: 15px 15px 5px;
+      color: #ceeb2e;
+    }
+    .box p {
+      padding: 0 15px 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">!Nterior</div>
+    <ul>
+      <li><a href="design.html">Home</a></li>
+      <li><a href="bedroom.html">Bedroom</a></li>
+      <li><a href="dining.html" class="active">Dining</a></li>
+      <li><a href="kitchen.html">Kitchen</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>DINING ROOM DESIGNS</h1>
+    <p>Bring family together with stunning dining spaces that blend style and function</p>
+    
+    <div class="gallery">
+      <div class="box">
+        <img src="images/mr.jpeg" alt="Luxury Dining">
+        <h3>Modern Elegance</h3>
+        <p>Sleek tables, statement lighting and minimal decor for formal dining.</p>
+      </div>
+      <div class="box">
+        <img src="images/rdr.jpeg" alt="Rustic Dining">
+        <h3>Rustic Charm</h3>
+        <p>Wooden tables, woven chairs and warm tones for a cozy family feel.</p>
+      </div>
+      <div class="box">
+        <img src="images/srs.jpeg" alt="Compact Dining">
+        <h3>Space Saver</h3>
+        <p>Round tables and bench seating perfect for small apartments.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

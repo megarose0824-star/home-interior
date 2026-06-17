@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+  </html>Nterior - Kitchen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(49, 1, 1, 0.75), rgba(45, 65, 8, 0.75)), 
+                  url(images/WhatsApp\ Image\ 2026-06-11\ at\ 9.33.14\ PM.jpeg) no-repeat center/cover;
+      color: #f1f1ee;
+    }
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fde5fb;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .navbar ul li::after {
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #00d4ff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after {
+      width: 100%;
+    }
+    .navbar ul li a.active::after {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 60px;
+      margin-top: 80px;
+    }
+    .content p {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      padding: 0 5%;
+    }
+    .box {
+      width: 320px;
+      background: rgba(224, 112, 112, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      backdrop-filter: blur(4px);
+    }
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .box h3 {
+      padding: 15px 15px 5px;
+      color: #0330ac;
+    }
+    .box p {
+      padding: 0 15px 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">!Nterior</div>
+    <ul>
+      <li><a href="design.html">Home</a></li>
+      <li><a href="bedroom.html">Bedroom</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="kitchen.html" class="active">Kitchen</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>KITCHEN DESIGNS</h1>
+    <p>Functional and beautiful kitchens that inspire you to cook and gather</p>
+    
+    <div class="gallery">
+      <div class="box">
+        <img src="images/WhatsApp Image 2026-06-11 at 9.33.14 PM.jpeg" alt="Modular Kitchen">
+        <h3>Modular Modern</h3>
+        <p>Smart storage, handleless cabinets and built-in appliances for sleek look.</p>
+      </div>
+      <div class="box">
+        <img src="images/is.jpeg" alt="Island Kitchen">
+        <h3>Island Style</h3>
+        <p>Spacious center island with seating, perfect for cooking and entertaining.</p>
+      </div>
+      <div class="box">
+        <img src="images/cc.jpeg" alt="Compact Kitchen">
+        <h3>Compact & Clever</h3>
+        <p>L-shaped layout with pull-out units to maximize small kitchen spaces.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
