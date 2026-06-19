@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-  </body>
-  </html>Nterior - Dining</title>
+  <title>INt9rior - Dining</title>
   <style>
     * {
-      margin: 0; 
+      margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
@@ -23,17 +12,21 @@
     body {
       width: 100%;
       height: 100vh;
-      background: linear-gradient(rgba(107, 47, 47, 0.75), rgba(73, 52, 52, 0.75)), 
-                  url(images/ddr.jpeg) no-repeat center/cover;
-      color: #000702;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                  url(img/dh.jpeg) no-repeat center/cover;
+      color: #fff;
     }
     .navbar {
-      width: 85%;
+      width: 90%;
       margin: auto;
-      padding: 35px 0;
+      padding: 20px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+    .navbar ul{
+      display: flex;
+      gap: 25px;
     }
     .logo {
       font-size: 24px;
@@ -42,9 +35,7 @@
     }
     .navbar ul li {
       list-style: none;
-      display: inline-block;
-      margin: 0 20px;
-      position: relative;
+      margin: 0;
     }
     .navbar ul li a {
       text-decoration: none;
@@ -70,14 +61,14 @@
     }
     .content {
       width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      padding-top: 10px;
       text-align: center;
+      color: white;
+      margin-top: 0;
     }
     .content h1 {
-      font-size: 60px;
-      margin-top: 80px;
+      font-size: 45px;
+      margin-bottom: 15px;
     }
     .content p {
       margin: 20px auto;
@@ -101,12 +92,12 @@
     }
     .box img {
       width: 100%;
-      height: 200px;
+      height: 100px;
       object-fit: cover;
     }
     .box h3 {
       padding: 15px 15px 5px;
-      color: #ceeb2e;
+      color: #00d4ff;
     }
     .box p {
       padding: 0 15px 20px;
@@ -117,32 +108,33 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="logo">!Nterior</div>
+    <div class="logo">INt9rior</div>
     <ul>
-      <li><a href="design.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="bedroom.html">Bedroom</a></li>
-      <li><a href="dining.html" class="active">Dining</a></li>
+      <li><a href="dinning.html" class="active">Dinning</a></li>
       <li><a href="kitchen.html">Kitchen</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="backyard.html">backyard</a></li>
     </ul>
   </div>
-
   <div class="content">
     <h1>DINING ROOM DESIGNS</h1>
     <p>Bring family together with stunning dining spaces that blend style and function</p>
     
     <div class="gallery">
       <div class="box">
-        <img src="images/mr.jpeg" alt="Luxury Dining">
+        <img src="img/dmh.jpeg" width="150" height="200">
         <h3>Modern Elegance</h3>
         <p>Sleek tables, statement lighting and minimal decor for formal dining.</p>
       </div>
       <div class="box">
-        <img src="images/rdr.jpeg" alt="Rustic Dining">
+        <img src="img/rdh.jpeg" width="150" height="200">
         <h3>Rustic Charm</h3>
         <p>Wooden tables, woven chairs and warm tones for a cozy family feel.</p>
       </div>
       <div class="box">
-        <img src="images/srs.jpeg" alt="Compact Dining">
+        <img src="img/rrr.jpeg" width="150" height="200">
         <h3>Space Saver</h3>
         <p>Round tables and bench seating perfect for small apartments.</p>
       </div>
@@ -150,3 +142,4 @@
   </div>
 </body>
 </html>
+    

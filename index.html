@@ -1,140 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>interior design</title>
+    <title>Interior Design</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            font-family: sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .banner{
-            width:100%;
+ 
+        .banner {
+            width: 100%;
             height: 100vh;
-            background-image:linear-gradient(rgba(83, 79, 79, 0.75),
-            rgba(47, 133, 65, 0.75)),url(images/hme.jpeg);
-             background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/hm.jpeg);
+            background-size: cover;
             background-position: center;
         }
-        .navbar{
-            width:95%;
-            margin:auto;
-            padding:35px 0;
-            display:flex;
-            align-items:center;
+
+        .navbar {
+            width: 95%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
             justify-content: space-between;
         }
-        .logo{
-            color:rgb(212, 142, 55);
-            cursor: pointer;
-            font-size: 28px;
-            font-weight: bold;
 
+        .logo {
+            color: white;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
         }
-        .navbar ul li{
+
+        .navbar ul li {
             list-style: none;
-            display:inline-block;
-            margin:0 20px;
-            position: relative;
+            margin: 0 20px;
         }
-        .navbar ul li a{
+        .navbar ul{
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar ul li a {
             text-decoration: none;
-            color: #000000;
+            color: white;
             font-size: 18px;
             text-transform: uppercase;
         }
-        
-      .navbar ul li::after{
+
+        .navbar ul li::after {
             content: '';
             height: 3px;
             width: 0;
-            background:#009688;
+            background: #009688;
             position: absolute;
-            left:0;
-            bottom:-10px;
-            transition:0.5s;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+
         }
-        .navbar ul li:hover::after{
+
+        .navbar ul li:hover::after {
             width: 100%;
         }
-        .content{
-            width:100%;
-            position: absolute;
-            top:50%;
-            transform:translateY(-50%);
-            text-align: center;
-            color:#fff;;
-        
+        .navbar ul li.active::after {
+            width: 100%;
         }
-        .content h1{
-            font-size: 70px;
+
+        .content {
+            width: 100%;
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color:white;
+            
+            
+        .content h1 {
+            font-size: 60px;
             margin-top: 80px;
         }
-        .content p{
+
+        .content p {
             margin: 20px auto;
             font-weight: 100;
             line-height: 25px;
         }
-        button{
+
+        button {
+            width: 180px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button {
             width: 200px;
             padding: 15px 0;
             text-align: center;
             margin: 20px 10px;
             border-radius: 25px;
             font-weight: bold;
-            border:2px solid #009688;
-            background:transparent;
-            color : #fff;;
-            cursor:pointer;
+            border: 2px solid #009688;
+            background: transparent;
+            color: white;
+            cursor: pointer;
             position: relative;
             overflow: hidden;
         }
-        span{
-            background:#009688;
+
+        span {
+            background: #009688;
             height: 100%;
-            width:0;
-            border-radius:25px;
+            width: 0;
+            border-radius: 25px;
             position: absolute;
-            left:0;
+            left: 0;
             bottom: 0;
             z-index: -1;
             transition: 0.5s;
-
         }
-        button:hover span{
+
+        button:hover span {
             width: 100%;
         }
-        buttton:hover{
-            border: none;
-        }
 
-        
+        button:hover {
+            color: white;
+        }
     </style>
 </head>
 <body>
-<div class="banner">
-    <div class="navbar">
-        <div class="logo"> !Nterior</div>
-     <ul>
-        <li><a href="design.html">home</a></li>
-        <li><a href="bedroom.html">bedroom</a></li>
-        <li><a href="dining.html">dining</a></li>
-        <li><a href="kitchen.html">kitchen</a></li>
-        <li><a href="backyard.html">backyard</a></li>
-        <li><a href="contact.html">contact</a></li>
-     </ul>
+    <div class="banner">
+        <div class="navbar">
+            <h2 class="logo">!Nt9rior</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="dinning.html">Dinning</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="backyard.html">backyard</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>DESIGN YOUR HOUSE</h1>
+            <P>Subscribe Easy Tutorials Youtube Channel to watch more videos,<br>press the bell icon to get latest
+                updates.</P>
+            <div>
+                <button type="button"><span></span>WATCH MORE</button>
+                <button type="button"><span></span>SUBSCRIBE</button>
+            </div>
+        </div>
     </div>
-    <div class="content">
-        <h1> DESIGN YOUR HOUSE</h1><br>
-        <p>
-        Subscribe Easy Tutorial youtube Channel to
-        watch more videos,<br> press the bell icon to Get lastest updates.
-        </p>
-    </div>
-    <div>
-        <button type="button"><span></span>WATCH MORE</button>
-        <button type="button"><span></span>SUBSCRIBE</button>
-    </div>
-</div>
 </body>
-</html>

@@ -1,154 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INt9rior - Contact Us</title>
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Arial, sans-serif; }
-
-  body { background:#522f0e; color:#330101; }
-
-  /* Navbar */
-  nav {
-    display:flex;
-    justify-content:center;
-    gap:50px;
-    padding:20px;
-    background:#382310;
-    position:relative;
-    z-index:2;
-  }
-  nav a {
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    letter-spacing:1px;
-    font-size:1.1rem;
-  }
-  nav a:hover { color:#0cb4e7; }
-
-  /* Hero / Contact Header */
-  .contact-hero {
-    position:relative;
-    text-align:center;
-    padding:60px 20px 40px;
-    background: linear-gradient(rgba(182, 189, 197, 0.75), rgba(154, 174, 196, 0.85)),
-                url(images/fnk.jpeg) center/cover no-repeat;
-    z-index:1;
-  }
-  .contact-hero h1 {
-    font-size:3.5rem;
-    font-weight:900;
-    letter-spacing:4px;
-    margin-bottom:15px;
-  }
-  .contact-hero p {
-    font-size:1.1rem;
-    color:#e0e0e0;
-  }
-
-  /* Info row */
-  .info-row {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:80px;
-    text-align:center;
-    margin:40px 0;
-  }
-  .info-row h3 {
-    color:#3ec6f0;
-    font-size:1.3rem;
-    margin-bottom:8px;
-  }
-  .info-row p { font-size:1rem; }
-
-  /* Form */
-  .contact-form {
-    max-width:700px;
-    margin:0 auto 60px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(6px);
-    border-radius:10px;
-    padding:30px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-  }
-  .contact-form input,
-  .contact-form textarea {
-    width:100%;
-    padding:14px 16px;
-    border-radius:6px;
-    border:1px solid rgba(255,255,255,0.3);
-    background:rgba(255,255,255,0.05);
-    color:#fff;
-    font-size:1rem;
-  }
-  .contact-form input::placeholder,
-  .contact-form textarea::placeholder { color:#cfd8dc; }
-  .contact-form textarea { min-height:130px; resize:vertical; }
-
-  .contact-form button {
-    align-self:center;
-    padding:14px 50px;
-    border:none;
-    border-radius:30px;
-    background:#3ec6f0;
-    color:#0d1b2a;
-    font-weight:700;
-    font-size:1rem;
-    cursor:pointer;
-    transition:background .3s;
-  }
-  .contact-form button:hover { background:#1aa7d8; }
-
-  @media (max-width:600px) {
-    nav { flex-wrap:wrap; gap:20px; }
-    .contact-hero h1 { font-size:2.2rem; }
-    .info-row { gap:30px; }
-  }
-</style>
+  <title>INt9rior - Contact</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                  url(img/cnt.jpeg) no-repeat center/cover;
+      color: #fff;
+    }
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar ul{
+        display: flex;
+        gap: 25px; 
+        list-style: none;
+    }
+    .navbar ul li {
+      margin: 0;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .navbar ul li::after {
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #00d4ff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after {
+      width: 100%;
+    }
+    .navbar ul li a.active::after {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      text-align: center;
+      padding-top:40px ;
+      padding: 50px;
+    }
+    .content h1 {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+    .content p {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+      max-width: 600px;
+    }
+    .contact-box {
+      width: 90%;
+      max-width: 500px;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+      margin: 30px auto 0;
+    }
+    .contact-box input, .contact-box textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 5px;
+      color: #fff;
+      outline: none;
+    }
+    .contact-box input::placeholder, .contact-box textarea::placeholder {
+      color: #ccc;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .info-item h3 {
+      color: #00d4ff;
+      margin-bottom: 10px;
+    }
+    .btn {
+      padding: 12px 30px;
+      margin: 20px 10px;
+      border: 2px solid #00d4ff;
+      background: transparent;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #00d4ff;
+      color: #000;
+      transition: 0.3s;
+    }
+  </style>
 </head>
 <body>
-
-<nav>
-  <a href="design.html">HOME</a>
-  <a href="bedroom.html">BEDROOM</a>
-  <a href="dining.html">DINING</a>
-  <a href="kitchen.html">KITCHEN</a>
-  <a href="backyard.html">Backyard</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section class="contact-hero">
-  <h1>CONTACT US</h1>
-  <p>Ready to transform your home? Get in touch for a free consultation</p>
-</section>
-
-<div class="info-row">
-  <div>
-    <h3>Email</h3>
-    <p>hello@int9rior.com</p>
+  <div class="navbar">
+    <div class="logo">INt9rior</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bedroom.html">Bedroom</a></li>
+      <li><a href="dinning.html">Dinning</a></li>
+      <li><a href="kitchen.html">Kitchen</a></li>
+      <li><a href="backyard.html">backyard</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
   </div>
-  <div>
-    <h3>Phone</h3>
-    <p>+91 9025657901</p>
-  </div>
-  <div>
-    <h3>Location</h3>
-    <p>Chennai, Tamil Nadu</p>
-  </div>
-</div>
 
-<form class="contact-form">
-  <input type="text" placeholder="Your Name" required>
-  <input type="email" placeholder="Your Email" required>
-  <input type="text" placeholder="Subject">
-  <textarea placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <div class="content">
+    <h1>CONTACT US</h1>
+    <p>Ready to transform your home? Get in touch for a free consultation</p>
+    
+    <div class="contact-info">
+      <div class="info-item">
+        <h3>Email</h3>
+        <p>hello@int9rior.com</p>
+      </div>
+      <div class="info-item">
+        <h3>Phone</h3>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="info-item">
+        <h3>Location</h3>
+        <p>Chennai, Tamil Nadu</p>
+      </div>
+    </div>
 
+    <div class="contact-box">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

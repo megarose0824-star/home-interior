@@ -15,7 +15,7 @@
       width: 100%;
       height: 100vh;
       background: linear-gradient(rgba(48, 52, 54, 0.75), rgba(11, 14, 15, 0.75)), 
-                  url(images/bkd.jpeg) no-repeat center/cover;
+                  url(img/bd.jpeg) no-repeat center/cover;
       color: #49a83d;
     }
     .navbar {
@@ -56,15 +56,12 @@
     .navbar ul li:hover::after {
       width: 100%;
     }
-    .navbar ul li a.active::after {
+    .navbar ul li.active::after {
       width: 100%;
     }
     .content {
       width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: center;
+      position:relative;
     }
     .content h1 {
       font-size: 60px;
@@ -110,11 +107,12 @@
   <div class="navbar">
     <div class="logo">!Nterior</div>
     <ul>
-      <li><a href="design.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="bedroom.html">Bedroom</a></li>
-      <li><a href="dining.html">Dining</a></li>
+      <li><a href="dinning.html">Dinning</a></li>
       <li><a href="kitchen.html">Kitchen</a></li>
-      <li><a href="backyard.html" class="active">backyard</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li class="active"><a href="backyard.html">backyard</a></li>
       
     </ul>
   </div>
@@ -125,17 +123,17 @@
     
     <div class="gallery">
       <div class="box">
-        <img src="images/mbk.jpeg" alt="Modern backyard">
+        <img src="img/bdm.jpeg" alt="Modern backyard">
         <h3>Modern Minimal</h3>
         <p>Clean lines and neutral palettes for a calm, clutter-free space.</p>
       </div>
       <div class="box">
-        <img src="images/llxk.jpeg" alt="Luxury backyard">
+        <img src="img/luxba.jpeg" alt="Luxury backyard">
         <h3>Luxury Comfort</h3>
         <p>Layered textures, warm lighting and plush fabrics for elegance.</p>
       </div>
       <div class="box">
-        <img src="images/bhok.jpeg" alt="Boho backyard">
+        <img src="img/llb.jpeg" alt="Boho backyard">
         <h3>Boho Chic</h3>
         <p>Natural materials, plants and earthy tones for a cozy vibe.</p>
       </div>

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>!Nterior - Bedroom</title>
+<title>Bedroom</title>
   <style>
     * {
       margin: 0;
@@ -14,14 +12,14 @@
     body {
       width: 100%;
       height: 100vh;
-      background: linear-gradient(rgba(87, 32, 7, 0.75), rgba(55, 64, 68, 0.75)), 
-                  url(images/bb.jpeg) no-repeat center/cover;
-      color: #360202;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                  url(img/bed.jpeg) no-repeat center/cover;
+      color: #fff;
     }
     .navbar {
-      width: 85%;
+      width: 90%;
       margin: auto;
-      padding: 35px 0;
+      padding: 20px 0%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -33,9 +31,11 @@
     }
     .navbar ul li {
       list-style: none;
-      display: inline-block;
-      margin: 0 20px;
-      position: relative;
+      margin: 0;
+    }
+    .navbar ul{
+      display: flex;
+      gap: 25px;
     }
     .navbar ul li a {
       text-decoration: none;
@@ -47,11 +47,11 @@
       content: '';
       height: 3px;
       width: 0;
-      background: #14aa96;
+      background: #00d4ff;
       position: absolute;
       left: 0;
       bottom: -10px;
-      transition: 0.5s;
+      transition: 0.8s;
     }
     .navbar ul li:hover::after {
       width: 100%;
@@ -61,14 +61,12 @@
     }
     .content {
       width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       text-align: center;
+      padding-top: 50px;
     }
     .content h1 {
-      font-size: 60px;
-      margin-top: 80px;
+      font-size: 45px;
+      margin-bottom: 15px;
     }
     .content p {
       margin: 20px auto;
@@ -84,7 +82,7 @@
       padding: 0 5%;
     }
     .box {
-      width: 320px;
+      width: 300px;
       background: rgba(255,255,255,0.1);
       border-radius: 10px;
       overflow: hidden;
@@ -92,12 +90,12 @@
     }
     .box img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
     }
     .box h3 {
       padding: 15px 15px 5px;
-      color: #20010d;
+      color: #00d4ff;
     }
     .box p {
       padding: 0 15px 20px;
@@ -108,32 +106,32 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="logo">!Nterior</div>
+    <div class="logo">INt9rior</div>
     <ul>
-      <li><a href="design.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="bedroom.html" class="active">Bedroom</a></li>
-      <li><a href="dining.html">Dining</a></li>
+      <li><a href="dinning.html">Dinning</a></li>
       <li><a href="kitchen.html">Kitchen</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="backyard.html">backyard</a></li>
     </ul>
   </div>
-
   <div class="content">
     <h1>BEDROOM DESIGNS</h1>
     <p>Create your perfect sleep sanctuary with our bedroom design ideas</p>
-    
     <div class="gallery">
       <div class="box">
-        <img src="images/fb.jpeg" alt="Modern Bedroom">
+        <img src= "img/mbed.jpeg" width="150" height="200">
         <h3>Modern Minimal</h3>
         <p>Clean lines and neutral palettes for a calm, clutter-free space.</p>
       </div>
       <div class="box">
-        <img src="images/lxb.jpeg" alt="Luxury Bedroom">
+        <img src="img/luxbed.jpeg" width="150" height="200">
         <h3>Luxury Comfort</h3>
         <p>Layered textures, warm lighting and plush fabrics for elegance.</p>
       </div>
       <div class="box">
-        <img src="images/clb.jpeg" alt="Boho Bedroom">
+        <img src="img/cmebed.jpeg" width="150" height="200">
         <h3>Boho Chic</h3>
         <p>Natural materials, plants and earthy tones for a cozy vibe.</p>
       </div>
